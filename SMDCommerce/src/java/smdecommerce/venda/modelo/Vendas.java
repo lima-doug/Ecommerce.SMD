@@ -43,7 +43,5 @@ public class Vendas {
         this.quantidade = quantidade;
     }
     
-    
-    
 }
 

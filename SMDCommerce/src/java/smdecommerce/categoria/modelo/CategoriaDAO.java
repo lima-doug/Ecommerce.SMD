@@ -67,6 +67,14 @@ public class CategoriaDAO {
         }  
     }
     
+     /**
+     * Método utilizado para deletar uma categoria.
+     * 
+     * @param descricao
+     * 
+     */
+    
+    
     public void delete(int id)throws Exception{
         Class.forName("org.postgresql.Driver");
         Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/SMDECommerce", "postgres", "ufc1234");
@@ -75,6 +83,13 @@ public class CategoriaDAO {
         int resultado = preparedStatement.executeUpdate();
         
     }
+    
+     /**
+     * Método utilizado para atualizar uma categoria.
+     * 
+     * @param descricao
+     * 
+     */
     
     public void atualizar(int id, String descricao)throws Exception{
         Class.forName("org.postgresql.Driver");
