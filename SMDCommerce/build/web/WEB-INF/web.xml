@@ -12,6 +12,66 @@
         <servlet-name>LogoutServlet</servlet-name>
         <servlet-class>smdecommerce.usuario.controle.LogoutServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>InicioServlet</servlet-name>
+        <servlet-class>smdecommerce.inicio.controle.InicioServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AdicionarProdutoCarrinhoCompraServlet</servlet-name>
+        <servlet-class>smdecommerce.compras.controle.AdicionarProdutoCarrinhoCompraServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RemoverProdutoCarrinhoCompraServlet</servlet-name>
+        <servlet-class>smdecommerce.compras.controle.RemoverProdutoCarrinhoCompraServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ListarProdutoServlet</servlet-name>
+        <servlet-class>smdecommerce.produto.controle.ListarProdutoServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>NovoProdutoServlet</servlet-name>
+        <servlet-class>smdecommerce.produto.controle.NovoProdutoServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>NovaCategoriaServlet</servlet-name>
+        <servlet-class>smdecommerce.categoria.controle.NovaCategoriaServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ListarCategoriaServlet</servlet-name>
+        <servlet-class>smdecommerce.categoria.controle.ListarCategoriaServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ExibirProdutoFotoServlet</servlet-name>
+        <servlet-class>smdecommerce.produto.modelo.ExibirProdutoFotoServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>MostrarProdutoFotoServlet</servlet-name>
+        <servlet-class>smdecommerce.produto.modelo.MostrarProdutoFotoServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AtualizarUsuarioServlet</servlet-name>
+        <servlet-class>smdecommerce.usuario.controle.AtualizarUsuarioServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UploadProdutoFotoServlet</servlet-name>
+        <servlet-class>smdecommerce.produto.modelo.UploadProdutoFotoServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeleteUsuarioServlet</servlet-name>
+        <servlet-class>smdecommerce.usuario.controle.DeleteUsuarioServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeleteCategoriaServlet</servlet-name>
+        <servlet-class>smdecommerce.categoria.controle.DeleteCategoriaServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AtualizarCategoriaServlet</servlet-name>
+        <servlet-class>smdecommerce.categoria.controle.AtualizarCategoriaServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>MostraCategoriaServlet</servlet-name>
+        <servlet-class>smdecommerce.categoria.modelo.MostraCategoriaServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>NovoClienteServlet</servlet-name>
         <url-pattern>/NovoCliente</url-pattern>
@@ -24,9 +84,74 @@
         <servlet-name>LogoutServlet</servlet-name>
         <url-pattern>/Logout</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>InicioServlet</servlet-name>
+        <url-pattern>/Inicio</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdicionarProdutoCarrinhoCompraServlet</servlet-name>
+        <url-pattern>/AdicionarCompra</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RemoverProdutoCarrinhoCompraServlet</servlet-name>
+        <url-pattern>/RemoverProdutoCarrinhoCompra</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ListarProdutoServlet</servlet-name>
+        <url-pattern>/ListarProduto</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>NovoProdutoServlet</servlet-name>
+        <url-pattern>/NovoProduto</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>NovaCategoriaServlet</servlet-name>
+        <url-pattern>/NovaCategoria</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ListarCategoriaServlet</servlet-name>
+        <url-pattern>/ListarCategoria</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ExibirProdutoFotoServlet</servlet-name>
+        <url-pattern>/ExibirProdutoFoto</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MostrarProdutoFotoServlet</servlet-name>
+        <url-pattern>/MostrarProdutoFoto</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AtualizarUsuarioServlet</servlet-name>
+        <url-pattern>/AtualizarUsuario</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UploadProdutoFotoServlet</servlet-name>
+        <url-pattern>/UploadProdutoFoto</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteUsuarioServlet</servlet-name>
+        <url-pattern>/DeleteUsuario</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteCategoriaServlet</servlet-name>
+        <url-pattern>/DeleteCategoria</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AtualizarCategoriaServlet</servlet-name>
+        <url-pattern>/AtualizarCategoria</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MostraCategoriaServlet</servlet-name>
+        <url-pattern>/MostraCategoria</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             30
         </session-timeout>
     </session-config>
+    <welcome-file-list>
+        <welcome-file>
+            Inicio
+        </welcome-file>
+    </welcome-file-list>
 </web-app>

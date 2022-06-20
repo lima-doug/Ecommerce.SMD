@@ -39,10 +39,14 @@ public class LoginClienteServlet extends HttpServlet {
             sucesso = false;
             mensagem = ex.getMessage();
         }
-        if (sucesso) {
+        if (sucesso && usuario.getAdministrador() == false) {
             RequestDispatcher requestDispatcher = request.getRequestDispatcher("principalCliente.jsp");
             requestDispatcher.forward(request, response);
-        } else {
+        }else if(sucesso && usuario.getAdministrador() == true){
+            RequestDispatcher requestDispatcher = request.getRequestDispatcher("adminPrincipal.jsp");
+            requestDispatcher.forward(request, response);
+        } 
+        else {
             request.setAttribute("mensagem", mensagem);
             RequestDispatcher requestDispatcher = request.getRequestDispatcher("login.jsp");
             requestDispatcher.forward(request, response);

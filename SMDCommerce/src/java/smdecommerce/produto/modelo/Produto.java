@@ -22,7 +22,6 @@ public class Produto implements Serializable {
     private Double preco;
     private Integer quantidade;
     private Integer categoria;
-    private Integer admin;
 
     public Integer getId() {
         return id;
@@ -72,16 +71,5 @@ public class Produto implements Serializable {
         this.categoria = categoria;
     }
 
-    public Integer getAdmin() {
-        return admin;
-    }
-
-    public void setAdmin(Integer admin) {
-        this.admin = admin;
-    }
-
-    void setNome(String string) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
     
 }

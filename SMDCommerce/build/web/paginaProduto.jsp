@@ -4,6 +4,9 @@
     Author     : Douglas Lima
 --%>
 
+<%@page import="smdecommerce.compras.modelo.CarrinhoCompraItem"%>
+<%@page import="java.util.List"%>
+<%@page import="smdecommerce.produto.modelo.Produto"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!doctype html>
 <html lang="pt-br">
@@ -19,49 +22,49 @@
 </head>
 
 <body style="min-width:372px;">
-    <nav class="navbar navbar-expand-lg navbar-dark border-bottom shadow-sm mb-3">
-        <div class="container">
-            <a class="navbar-brand text-dark" href="/"><strong>SMD Commerce</strong></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+      <nav class="navbar navbar-expand-lg navbar-dark border-bottom shadow-sm mb-3">
+            <div class="container">
+                <a class="navbar-brand text-dark" href="index.jsp"><strong>SMD Commerce</strong></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="navbar-collapse collapse text-dark">
-                <ul class="navbar-nav flex-grow-1">
-                    <li class="nav-item me-4">
-                        <a href="./index.html" class="nav-link text-dark">Home</a>
-                    </li>
-                    <li class="nav-item me-4">
-                        <a href="produtos.html" class="nav-link text-dark">Produtos</a>
-                    </li>
-                    <li class="nav-item me-4">
-                        <a href="#" class="nav-link text-dark">Sobre</a>
-                    </li>
-                </ul>
-
-                <div class="align-self-end">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a href="./login.html" class="text-dark btn btn-secondary text-white" role="button">Entrar</a>
+                <div class="navbar-collapse collapse text-dark">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item me-4">
+                            <a href="index.jsp" class="nav-link text-dark">Home</a>
                         </li>
-
-                        <li class="nav-item">
-                            <a href="./cadastro_c.html" class="text-dark btn  ">Criar conta</a>
+                        <li class="nav-item me-4">
+                            <a href="produtos.jsp" class="nav-link text-dark">Produtos</a>
                         </li>
-
-                        <li class="nav-item">
-                            <a href="./compras.html" class="nav-link text-dark">
-                                <img src="./icons/shopping--cart 1.png" alt="">
-                            </a>
+                        <li class="nav-item me-4">
+                            <a href="#" class="nav-link text-dark">Sobre</a>
                         </li>
                     </ul>
+
+                    <div class="align-self-end">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="login.jsp" class="btn btn-secondary text-white" role="button">Entrar</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="novoCliente.jsp" class="text-dark btn  ">Criar conta</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="carrinhosCompra.jsp" class="nav-link text-dark">
+                                    <span class="iconify" data-icon="bi:cart-fill" style="color: #6c757d; width: 24px; height: 24px;"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
     <br><br>
-    <head >
+    <header>
         <div class="row bg-transparent mx-4 gap-4 justify-content-center align-items-center" >
             <div class="col-5 ">
                 <img class="img-fluid card-img d-block d-md-block" src="./images/SM-placeholder.png" alt="">
@@ -83,7 +86,7 @@
                 </div>
             </div>  
         </div>
-    </head>
+</header>
 
     <footer class="mt-10 border-top text-muted position-absolute fixed-bottom bg-light">
         <div class="container">
@@ -94,7 +97,6 @@
             </div>
         </div>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
         crossorigin="anonymous"></script>

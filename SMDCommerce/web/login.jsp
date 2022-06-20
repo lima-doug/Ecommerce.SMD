@@ -19,46 +19,40 @@
 </head>
 
 <body style="min-width:372px;">
-    <nav class="navbar navbar-expand-lg navbar-dark border-bottom shadow-sm mb-3">
-        <div class="container">
-            <a class="navbar-brand text-dark" href="/"><strong>SMD Commerce</strong></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+      <nav class="navbar navbar-expand-lg navbar-dark border-bottom shadow-sm mb-3">
+            <div class="container">
+                <a class="navbar-brand text-dark" href="index.jsp"><strong>SMD Commerce</strong></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="navbar-collapse collapse text-dark">
-                <ul class="navbar-nav flex-grow-1">
-                    <li class="nav-item me-4">
-                        <a href="index.jsp" class="nav-link text-dark">Home</a>
-                    </li>
-                    <li class="nav-item me-4">
-                        <a href="produtos.jsp" class="nav-link text-dark">Produtos</a>
-                    </li>
-                    <li class="nav-item me-4">
-                        <a href="#" class="nav-link text-dark">Sobre</a>
-                    </li>
-                </ul>
-
-                <div class="align-self-end">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a href="login.jsp" class="text-dark btn btn-secondary text-white" role="button">Entrar</a>
+                <div class="navbar-collapse collapse text-dark">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item me-4">
+                            <a href="index.jsp" class="nav-link text-dark">Home</a>
                         </li>
-
-                        <li class="nav-item">
-                            <a href="novoCliente.jsp" class="text-dark btn  ">Criar conta</a>
+                        <li class="nav-item me-4">
+                            <a href="produtos.jsp" class="nav-link text-dark">Produtos</a>
                         </li>
-
-                        <li class="nav-item">
-                            <a href="carrinhoCompra.jsp" class="nav-link text-dark">
-                                <img src="./icons/shopping--cart 1.png" alt="">
-                            </a>
+                        <li class="nav-item me-4">
+                            <a href="#" class="nav-link text-dark">Sobre</a>
                         </li>
                     </ul>
+
+                    <div class="align-self-end">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="login.jsp" class="btn btn-secondary text-white" role="button">Entrar</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="novoCliente.jsp" class="text-dark btn  ">Criar conta</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
     <main>
         <div class="container">
@@ -81,7 +75,7 @@
                     </div>
 
                     <div class="form-check mb-3">
-                        <input type="checkbox" class="form-check-input" value="" id="chkLembrar"
+                        <input type="checkbox" class="form-check-input" value="" id="chkLembrar">
                         <label for="chkLembrar" class="form-check-input">Lembrar de mim</label>
                     </div>
                     <div class="mb-3 text-end">
