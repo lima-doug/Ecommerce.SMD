@@ -1,13 +1,11 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package smdecommerce.compras.modelo;
 
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import smdecommerce.produto.modelo.Produto;
 import smdecommerce.produto.modelo.ProdutoDAO;
 
@@ -22,18 +20,10 @@ public class CarrinhoCompra {
 
     public static final String CHAVE_COOKIE_CARRINHO_COMPRA = "smdecommerce.carrinhocompras";
 
-    /**
-     *
-     * Obter um objeto cookie a partir da requisição e do identificador cookie
-     * do carrinho de compra
-     *
-     * @param request
-     * @return
-     */
     public static final Cookie obterCookie(HttpServletRequest request) {
         Cookie[] cookies = request.getCookies();
         Cookie cookie = null;
-        for (int i = 0; cookie != null && i < cookies.length; i++) {
+        for (int i = 0; cookies != null && i < cookies.length; i++) {
             if (cookies[i].getName().equals(CHAVE_COOKIE_CARRINHO_COMPRA)) {
                 cookie = cookies[i];
                 break;
@@ -42,7 +32,7 @@ public class CarrinhoCompra {
         return cookie;
     }
 
-    public static final List<CarrinhoCompraItem> obterCarrinhoCompras(String valor) {
+    public static final List<CarrinhoCompraItem> obterCarrinhoCompra(String valor) {
         List<CarrinhoCompraItem> carrinhoCompraItens = new ArrayList<>();
         if (valor == null || valor.trim().length() == 0 || !valor.contains(SEPARADOR_CAMPO)) {
             return carrinhoCompraItens;
@@ -79,8 +69,9 @@ public class CarrinhoCompra {
         return carrinhoCompraItens;
     }
 
-    public static final String adicionarItem(int produtoId, int quantidade, String valor) throws Exception {
-        List<CarrinhoCompraItem> carrinhoCompraItens = obterCarrinhoCompras(valor);
+    
+    public static final String adicionarItem(int produtoId, int quantidade, String valor) {
+        List<CarrinhoCompraItem> carrinhoCompraItens = obterCarrinhoCompra(valor);
         if (carrinhoCompraItens.isEmpty()) {
             return produtoId + SEPARADOR_CAMPO + quantidade;
         }
@@ -102,13 +93,14 @@ public class CarrinhoCompra {
         return resultado;
     }
 
+    
     public static final String removerItem(int produtoId, String valor) {
-        List<CarrinhoCompraItem> carrinhoCompraItens = obterCarrinhoCompras(valor);
+        List<CarrinhoCompraItem> carrinhoCompraItens = obterCarrinhoCompra(valor);
         if (carrinhoCompraItens.isEmpty()) {
             return "";
         }
         String resultado = "";
-
+        
         for (CarrinhoCompraItem carrinhoCompraItem : carrinhoCompraItens) {
             if (carrinhoCompraItem.getProduto().getId() == produtoId) {
                 continue;
@@ -117,7 +109,6 @@ public class CarrinhoCompra {
                 resultado += SEPARADOR_PRODUTO;
             }
             resultado += carrinhoCompraItem.getProduto().getId() + SEPARADOR_CAMPO + carrinhoCompraItem.getQuantidade();
-
         }
         return resultado;
     }

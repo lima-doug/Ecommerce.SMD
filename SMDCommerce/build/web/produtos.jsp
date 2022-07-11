@@ -24,7 +24,7 @@
 <body style="min-width:372px;">
       <nav class="navbar navbar-expand-lg navbar-dark border-bottom shadow-sm mb-3">
             <div class="container">
-                <a class="navbar-brand text-dark" href="index.jsp"><strong>SMD Commerce</strong></a>
+                <a class="navbar-brand text-dark" href="Inicio"><strong>SMD Commerce</strong></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -32,10 +32,10 @@
                 <div class="navbar-collapse collapse text-dark">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item me-4">
-                            <a href="index.jsp" class="nav-link text-dark">Home</a>
+                            <a href="Inicio" class="nav-link text-dark">Home</a>
                         </li>
                         <li class="nav-item me-4">
-                            <a href="produtos.jsp" class="nav-link text-dark">Produtos</a>
+                            <a href="Product" class="nav-link text-dark">Produtos</a>
                         </li>
                         <li class="nav-item me-4">
                             <a href="#" class="nav-link text-dark">Sobre</a>
@@ -53,7 +53,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <a href="carrinhosCompra.jsp" class="nav-link text-dark">
+                                <a href="CarrinhoCompraPage" class="nav-link text-dark">
                                     <span class="iconify" data-icon="bi:cart-fill" style="color: #6c757d; width: 24px; height: 24px;"></span>
                                 </a>
                             </li>

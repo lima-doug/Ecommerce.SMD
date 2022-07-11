@@ -31,7 +31,7 @@
     <body style="min-width:372px;">
         <nav class="navbar navbar-expand-lg navbar-dark border-bottom shadow-sm mb-3">
             <div class="container">
-                <a class="navbar-brand text-dark" href="principalCliente.jsp"><strong>SMD Commerce</strong></a>
+                <a class="navbar-brand text-dark" href="InicioClient"><strong>SMD Commerce</strong></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -39,10 +39,10 @@
                 <div class="navbar-collapse collapse text-dark">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item me-4">
-                            <a href="principalCliente.jsp" class="nav-link text-dark">Home</a>
+                            <a href="InicioClient" class="nav-link text-dark">Home</a>
                         </li>
                         <li class="nav-item me-4">
-                            <a href="produtos.jsp" class="nav-link text-dark">Produtos</a>
+                            <a href="ProductClient" class="nav-link text-dark">Produtos</a>
                         </li>
                         <li class="nav-item me-4">
                             <a href="#" class="nav-link text-dark">Sobre</a>
@@ -54,18 +54,18 @@
                             <li class="nav-item me-4">
                                 <div class="dropdown">
                                     <button class="nav-link text-dark border-0 p-2 dropdown-toggle btn btn-sm"
-                                            type="button" id="dropdownMenuButton1"data-bs-toggle="dropdown"
+                                            type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
                                             aria-expanded="false">
                                         Olá <%= usuario.getNome()%>
                                     </button>
                                     <ul class="dropdown-menu list-style-none" aria-labelledby="dropdownMenuButton1">
                                         <li><a class="dropdown-item" href="configuracoes.jsp">Configurações</a></li>
-                                        <li><a class="dropdown-item" href="#">Pedidos</a></li>
+                                        <li><a class="dropdown-item" href="ListarComprasCliente?usuarioId=<%= usuario.getId()%>">Pedidos</a></li>
                                         <li><a class="dropdown-item" href="Logout">Sair</a></li>
                                     </ul>
                             </li>
                             <li class="nav-item">
-                                <a href="carrinhosCompra.jsp" class="nav-link text-dark">
+                                <a href="CarrinhoCompraPage" class="nav-link text-dark">
                                     <span class="iconify" data-icon="bi:cart-fill" style="color: #6c757d; width: 24px; height: 24px;"></span>
                                 </a>
                             </li>

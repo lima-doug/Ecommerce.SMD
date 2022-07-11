@@ -1,12 +1,9 @@
 package smdecommerce.compras.modelo;
 
+import java.io.Serializable;
 import smdecommerce.produto.modelo.Produto;
 
-/**
- *
- * @author Douglas Lima
- */
-public class CarrinhoCompraItem {
+public class CarrinhoCompraItem implements Serializable {
     
     private Produto produto;
     private int quantidade;
@@ -26,8 +23,5 @@ public class CarrinhoCompraItem {
     public void setQuantidade(int quantidade) {
         this.quantidade = quantidade;
     }
-    
-    
-    
     
 }

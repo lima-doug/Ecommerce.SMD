@@ -23,7 +23,7 @@ public class RemoverProdutoCarrinhoCompraServlet extends HttpServlet {
         cookie.setValue(novoValor);
         
         
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("Início");
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("CarrinhoCompraPage");
         requestDispatcher.forward(request, response);
 
     }

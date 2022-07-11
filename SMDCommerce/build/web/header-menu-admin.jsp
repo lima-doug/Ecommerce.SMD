@@ -49,21 +49,16 @@
                             <li class="nav-item me-4">
                                 <div class="dropdown">
                                     <button class="nav-link text-dark border-0 p-2 dropdown-toggle btn btn-sm"
-                                            type="button" id="dropdownMenuButton1"data-bs-toggle="dropdown"
+                                            type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
                                             aria-expanded="false">
                                         Olá <%= usuario.getNome()%>
                                     </button>
                                     <ul class="dropdown-menu list-style-none" aria-labelledby="dropdownMenuButton1">
                                         <li><a class="dropdown-item" href="configuracoes.jsp">Configurações</a></li>
-                                        <li><a class="dropdown-item" href="#">Pedidos</a></li>
                                         <li><a class="dropdown-item" href="Logout">Sair</a></li>
                                     </ul>
                             </li>
-                            <li class="nav-item">
-                                <a href="carrinhosCompra.jsp" class="nav-link text-dark">
-                                    <span class="iconify" data-icon="bi:cart-fill" style="color: #6c757d; width: 24px; height: 24px;"></span>
-                                </a>
-                            </li>
+
                         </ul>
                     </div>
                 </div>

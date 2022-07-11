@@ -7,12 +7,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-/**
- *
- * @author Leonardo Oliveira Moreira
- *
- * Classe que implementa a ação de mostrar um produto
- */
+
 public class MostraCategoriaServlet extends HttpServlet {
 
 

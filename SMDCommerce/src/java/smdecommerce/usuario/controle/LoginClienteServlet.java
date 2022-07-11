@@ -40,7 +40,7 @@ public class LoginClienteServlet extends HttpServlet {
             mensagem = ex.getMessage();
         }
         if (sucesso && usuario.getAdministrador() == false) {
-            RequestDispatcher requestDispatcher = request.getRequestDispatcher("principalCliente.jsp");
+            RequestDispatcher requestDispatcher = request.getRequestDispatcher("InicioClient");
             requestDispatcher.forward(request, response);
         }else if(sucesso && usuario.getAdministrador() == true){
             RequestDispatcher requestDispatcher = request.getRequestDispatcher("adminPrincipal.jsp");

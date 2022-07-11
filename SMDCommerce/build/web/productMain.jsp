@@ -56,16 +56,14 @@
             %>
             <div class="col-xl-3 col-lg-4 col-md-5 col-sm- d-flex align-items-stretch">
                 <div class="card text-center bg-light">
-                    <div class="card-img-top"><%= (p.getFoto() == null) ? "Sem Foto" : "<img src=\"ExibirProdutoFoto?id=" + p.getId() + "\" />" %></div>
-                    <div class="card-header"><%= p.getPreco()%></div>
+
+                    <div class="card-header">R$ <%= p.getPreco()%></div>
                     <div class="card-body">
                         <h5 class="card-title"><%= p.getDescricao()%></h5>
                         <div class="card-footer">
-                            <form class="d-block">
-                                <a href="AdicionarProdutoCarrinhoCompra?produtoId=<%= p.getId()%>" class="btn" style="font-size: 16; background:#EFEFEF;">
+                                <a href="AdicionarCompra?produtoId=<%= p.getId()%>" class="btn" style="font-size: 16; background:#EFEFEF;">
                                     Adicionar ao Carrinho
                                 </a>
-                            </form>
                         </div>
                     </div>
                 </div>

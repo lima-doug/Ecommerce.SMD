@@ -36,7 +36,7 @@ public class DeleteCategoriaServlet extends HttpServlet {
         }
         
         request.setAttribute("mensagem", mensagem);
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("listarCategorias.jsp");
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("ListarCategoria");
         requestDispatcher.forward(request, response);
     }
 }

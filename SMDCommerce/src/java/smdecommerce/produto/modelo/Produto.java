@@ -18,10 +18,9 @@ public class Produto implements Serializable {
     
     private Integer id;
     private String descricao;
-    private String foto;
     private Double preco;
     private Integer quantidade;
-    private Integer categoria;
+    private Integer categoria_id;
 
     public Integer getId() {
         return id;
@@ -37,14 +36,6 @@ public class Produto implements Serializable {
 
     public void setDescricao(String descricao) {
         this.descricao = descricao;
-    }
-
-    public String getFoto() {
-        return foto;
-    }
-
-    public void setFoto(String foto) {
-        this.foto = foto;
     }
 
     public Double getPreco() {
@@ -64,12 +55,13 @@ public class Produto implements Serializable {
     }
 
     public Integer getCategoria() {
-        return categoria;
+        return categoria_id;
     }
 
-    public void setCategoria(Integer categoria) {
-        this.categoria = categoria;
+    public void setCategoria(Integer categoria_id) {
+        this.categoria_id = categoria_id;
     }
 
+    
     
 }

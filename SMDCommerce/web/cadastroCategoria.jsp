@@ -17,6 +17,7 @@
                     <label for="txtCategoria">Nova categoria</label>
                 </div>
                 <div class="mb-3 text-end">
+                    <a class="btn btn-outline-danger" href="ListarCategoria" role="button">Cancelar</a>
                     <input type="submit" value="Salvar" class="btn btn-danger">
                 </div>
             </form>

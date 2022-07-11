@@ -31,7 +31,7 @@ public class NovaCategoriaServlet extends HttpServlet {
             mensagem = ex.getMessage();
         }
         request.setAttribute("mensagem", mensagem);
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("listarCategorias.jsp");
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("ListarCategoria");
         requestDispatcher.forward(request, response);
     }
 

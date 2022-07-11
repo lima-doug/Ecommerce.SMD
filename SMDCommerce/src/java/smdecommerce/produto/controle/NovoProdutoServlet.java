@@ -36,7 +36,7 @@ public class NovoProdutoServlet extends HttpServlet {
         }
 
         request.setAttribute("mensagem", mensagem);
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("listarProduto.jsp");
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("ListarProduto");
         requestDispatcher.forward(request, response);
     }
 }

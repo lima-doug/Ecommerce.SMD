@@ -12,45 +12,29 @@
         <div class="row">
 
             <div class="row">
-                <div class="col-xl-3 col-lg-4 col-md-5 col-sm- d-flex align-items-stretch">
-                    <a class="btn" href="ListarCategoria">
-                    <div class="card text-center bg-light">
-                        <img class="card-img-top" src="./images/SM-placeholder.png" alt="">
-                        <div class="card-header">
-                            <h5 class="card-title">Atualizar e cadastrar Categoria</h5>
-                        </div>
+
+                <a class="btn p-2" href="ListarCategoria">
+                    <div class="card text-center bg-light">       
+                        <h5 class="p-2 card-title">Atualizar e cadastrar Categoria</h5>
                     </div>
-                        </a>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-5 col-sm- d-flex align-items-stretch">
-                    <a class="btn" href="ListarProduto">
-                        <div class="card text-center bg-light">
-                            <img class="card-img-top" src="./images/SM-placeholder.png" alt="">
-                            <div class="card-header">
-                                <h5 class="card-title">Atualizar e cadastrar Produto</h5>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-5 col-sm- d-flex align-items-stretch">
+                </a>
+
+                <a class="btn p-2" href="ListarProduto">
                     <div class="card text-center bg-light">
-                        <img class="card-img-top" src="./images/SM-placeholder.png" alt="">
-                        <div class="card-header">
-                            <h5 class="card-title">Registrar Vendas</h5>
-                        </div>
+                        <h5 class="p-2 card-title">Atualizar e cadastrar Produto</h5>
                     </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-5 col-sm- d-flex align-items-stretch">
+                </a>
+
+                <a class="btn p-2" href="ListarVendas" style='height:72px;'>
                     <div class="card text-center bg-light">
-                        <img class="card-img-top" src="./images/SM-placeholder.png" alt="">
-                        <div class="card-header">
-                            <h5 class="card-title">Relatórios e Dashboards</h5>
-                        </div>
+                        <h5 class="p-2 card-title">Relatório</h5>
                     </div>
-                </div>
-                <hr class="mt-3">
+                </a>
+
             </div>
+            <hr class="mt-3">
         </div>
+    </div>
 </main>
 
 <%@include file="footer.jsp" %>

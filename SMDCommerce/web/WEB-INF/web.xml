@@ -72,6 +72,58 @@
         <servlet-name>MostraCategoriaServlet</servlet-name>
         <servlet-class>smdecommerce.categoria.modelo.MostraCategoriaServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>MostrarProdutoServlet</servlet-name>
+        <servlet-class>smdecommerce.produto.modelo.MostrarProdutoServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AtualizarProdutoServlet</servlet-name>
+        <servlet-class>smdecommerce.produto.controle.AtualizarProdutoServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeletaProdutoServlet</servlet-name>
+        <servlet-class>smdecommerce.produto.controle.DeletaProdutoServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ListCategoriasServlet</servlet-name>
+        <servlet-class>smdecommerce.categoria.controle.ListCategoriasServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ProductServlet</servlet-name>
+        <servlet-class>smdecommerce.inicio.controle.ProductServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>InicioClientServlet</servlet-name>
+        <servlet-class>smdecommerce.inicio.controle.InicioClientServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ProductClientServlet</servlet-name>
+        <servlet-class>smdecommerce.inicio.controle.ProductClientServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CarrinhoCompraPageServlet</servlet-name>
+        <servlet-class>smdecommerce.inicio.controle.CarrinhoCompraPageServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CarrinhoCompraPageClienteServlet</servlet-name>
+        <servlet-class>smdecommerce.inicio.controle.CarrinhoCompraPageClienteServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ConcluirVendaServlet</servlet-name>
+        <servlet-class>smdecommerce.venda.controle.ConcluirVendaServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ListarVendasServlet</servlet-name>
+        <servlet-class>smdecommerce.venda.controle.ListarVendasServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ExcluirVendaServlet</servlet-name>
+        <servlet-class>smdecommerce.venda.controle.ExcluirVendaServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ListarComprasClienteServlet</servlet-name>
+        <servlet-class>smdecommerce.venda.controle.ListarComprasClienteServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>NovoClienteServlet</servlet-name>
         <url-pattern>/NovoCliente</url-pattern>
@@ -144,14 +196,64 @@
         <servlet-name>MostraCategoriaServlet</servlet-name>
         <url-pattern>/MostraCategoria</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MostrarProdutoServlet</servlet-name>
+        <url-pattern>/MostrarProduto</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AtualizarProdutoServlet</servlet-name>
+        <url-pattern>/AtualizarProduto</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeletaProdutoServlet</servlet-name>
+        <url-pattern>/DeletaProduto</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ListCategoriasServlet</servlet-name>
+        <url-pattern>/ListCategorias</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ProductServlet</servlet-name>
+        <url-pattern>/Product</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>InicioClientServlet</servlet-name>
+        <url-pattern>/InicioClient</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ProductClientServlet</servlet-name>
+        <url-pattern>/ProductClient</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CarrinhoCompraPageServlet</servlet-name>
+        <url-pattern>/CarrinhoCompraPage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CarrinhoCompraPageClienteServlet</servlet-name>
+        <url-pattern>/CarrinhoCompraPageCliente</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ConcluirVendaServlet</servlet-name>
+        <url-pattern>/ConcluirVenda</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ListarVendasServlet</servlet-name>
+        <url-pattern>/ListarVendas</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ExcluirVendaServlet</servlet-name>
+        <url-pattern>/ExcluirVenda</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ListarComprasClienteServlet</servlet-name>
+        <url-pattern>/ListarComprasCliente</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             30
         </session-timeout>
     </session-config>
     <welcome-file-list>
-        <welcome-file>
-            Inicio
-        </welcome-file>
+        <welcome-file>Inicio</welcome-file>
     </welcome-file-list>
 </web-app>
